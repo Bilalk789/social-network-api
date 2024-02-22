@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { getAllUsers, getUserById, createUser, updateUser, deleteUser } = require('../controllers/user-controller');
+const userController = require('../controllers/user-controller.js');
+const { getAllUsers, getUserById, createUser, updateUser, deleteUser } = userController;
 
 // routes for handling post put and delete
 router.route('/')
